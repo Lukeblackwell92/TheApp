@@ -11,18 +11,26 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var TheLabel: UILabel!
-    
-    var clickcount = 0
-    
    
     
+    
+    
+    var clickcount = 0
+    @IBOutlet weak var text1: UITextField!
+    
+  
+    
+    @IBOutlet weak var text2: UITextField!
+ 
+    
+    
     @IBAction func buttonpressed(_ sender: Any) {
-        clickcount = clickcount + 1
+
+    print(text1.text!)
         
-        if clickcount >= 10 {
-            TheLabel.text = "you pressed me 10 times"
-            
-    }
+    print(text2.text!)
+        
+        
     }
     
  
