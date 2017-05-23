@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     
     
     
-    var clickcount = 0
     @IBOutlet weak var text1: UITextField!
     
   
@@ -26,9 +25,13 @@ class ViewController: UIViewController {
     
     @IBAction func buttonpressed(_ sender: Any) {
 
+        let Addition = true
+        
+        if Addition {
         TheLabel.text = "The answer is...\(Double(text1.text!)! + Double(text2.text!)!)"
-        
-        
+        } else {
+            TheLabel.text = "The answer is...\(Double(text1.text!)! - Double(text2.text!)!)"
+        }
     }
     
  
